@@ -12,19 +12,17 @@ export default {
   props: {
     task: Object,
   },
-
   emits: ["delete-task", "toggle-completion"],
   setup(props, { emit }) {
     const toggleCompletion = () => {
       emit("toggle-completion", props.task.id);
     };
+
     const deleteTask = () => {
       emit("delete-task", props.task.id);
     };
-    return {
-      toggleCompletion,
-      deleteTask,
-    };
+
+    return { toggleCompletion, deleteTask };
   },
 };
 </script>
@@ -34,11 +32,12 @@ export default {
   text-decoration: line-through;
   color: grey;
 }
+
 li {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding: 10px;
+  margin: 5px 0;
   background-color: #f0f0f0;
   border-radius: 5px;
 }

@@ -1,6 +1,10 @@
 <template>
   <div>
-    <input v-model="taskTitle" placeholder="Entertask" @keyup.enter="addTask" />
+    <input
+      v-model="taskTitle"
+      placeholder="Enter task"
+      @keyup.enter="addTask"
+    />
     <button @click="addTask">Add Task</button>
   </div>
 </template>
@@ -17,9 +21,10 @@ export default {
     const addTask = () => {
       if (taskTitle.value.trim()) {
         emit("add-task", taskTitle.value);
-        taskTitle.value = ""; //Reset input
+        taskTitle.value = ""; // Reset input
       }
     };
+
     return { taskTitle, addTask };
   },
 };
@@ -36,7 +41,6 @@ input {
 
 button {
   padding: 10px;
-  width: 80%;
   background-color: #007bff;
   color: white;
   border: none;

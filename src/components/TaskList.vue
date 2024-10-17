@@ -30,6 +30,7 @@ export default {
     const toggleCompletion = (taskId) => {
       emit("toggle-completion", taskId);
     };
+
     return { deleteTask, toggleCompletion };
   },
 };
