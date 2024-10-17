@@ -1,5 +1,61 @@
-# Vue 3 + Vite
+## Installation and Execution
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+To install and run this project locally, follow these steps:
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+### Prerequisites
+
+Make sure you have Node.js and npm installed. You can download them from [nodejs.org](https://nodejs.org/).
+
+### Installation
+
+1. **Clone the repository**:
+
+   ```bash
+   git clone https://github.com/yourusername/task-manager.git
+   ```
+
+2. **Navigate into the project directory**:
+
+   ```bash
+   cd task-manager
+   ```
+
+3. **Install dependencies**:
+
+   ```bash
+   npm install
+   ```
+
+### Running the App
+
+4. **Run the development server**:
+
+   ```bash
+   npm run dev
+   ```
+
+   This will start the app locally on [http://localhost:3000](http://localhost:3000).
+
+5. **Build for production**:
+
+   To create a production-ready build, run the following command:
+
+   ```bash
+   npm run build
+   ```
+
+6. **Preview production build**:
+
+   To preview the build before deploying, run:
+
+   ```bash
+   npm run serve
+   ```
+
+   This will allow you to see the production build locally.
+
+## Technologies Used
+
+- **Vue 3**: The core framework used for building the application.
+- **JavaScript (ES6)**: The programming language used to implement functionality.
+- **CSS**: Custom styles for creating a responsive, clean UI.
